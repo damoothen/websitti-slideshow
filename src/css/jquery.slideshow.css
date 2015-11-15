@@ -1,0 +1,48 @@
+/* line 3, ../../sass/jquery.slideshow.scss */
+.slideshow {
+  height: 400px;
+  width: 100%;
+  position: relative;
+}
+/* line 8, ../../sass/jquery.slideshow.scss */
+.slideshow .slideshow-container {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  width: 100%;
+  height: inherit;
+  position: relative;
+}
+/* line 17, ../../sass/jquery.slideshow.scss */
+.slideshow .slideshow-container .item {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: inherit;
+  opacity: 0;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+/* line 26, ../../sass/jquery.slideshow.scss */
+.slideshow .slideshow-container .item:nth-child(1) {
+  background-color: red;
+}
+/* line 29, ../../sass/jquery.slideshow.scss */
+.slideshow .slideshow-container .item:nth-child(2) {
+  background-color: green;
+}
+/* line 32, ../../sass/jquery.slideshow.scss */
+.slideshow .slideshow-container .item:nth-child(3) {
+  background-color: blue;
+}
+/* line 35, ../../sass/jquery.slideshow.scss */
+.slideshow .slideshow-container .item:nth-child(4) {
+  background-color: teal;
+}
+/* line 39, ../../sass/jquery.slideshow.scss */
+.slideshow .slideshow-container .item.active {
+  opacity: 1;
+}

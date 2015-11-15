@@ -96,6 +96,17 @@
         <!-- /.container-fluid -->
     </nav>
 
+    <div class="slideshow">
+
+        <ul class="slideshow-container">
+            <li class="item"></li>
+            <li class="item"></li>
+            <li class="item"></li>
+            <li class="item"></li>
+        </ul>
+
+    </div>
+
     <section id="section1">
         <div class="container-fluid">
             <div class="row">
@@ -155,7 +166,11 @@
 
     <script>
         (function($){
-            $('.submenu').submenu();
+
+            $('.slideshow').slideshow({
+                duration: 2000
+            });
+
         })(jQuery);
 
     </script>

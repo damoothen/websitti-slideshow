@@ -1,1 +1,47 @@
 @import "compass";
+
+.slideshow {
+    height: 400px;
+    width: 100%;
+    position: relative;
+
+    .slideshow-container {
+
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        width: 100%;
+        height: inherit;
+        position: relative;
+
+        .item {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: inherit;
+            opacity: 0;
+            @include transition(0.5s);
+
+            &:nth-child(1) {
+                background-color: red;
+            }
+            &:nth-child(2) {
+                background-color: green;
+            }
+            &:nth-child(3) {
+                background-color: blue;
+            }
+            &:nth-child(4) {
+                background-color: teal;
+            }
+
+            &.active {
+                opacity: 1;
+            }
+
+        }
+
+    }
+
+}
