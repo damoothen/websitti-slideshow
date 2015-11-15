@@ -14,6 +14,8 @@
 
             var $slider = $(this);
             var $items = $('.item', $slider);
+            var $nextBtn = $('.next-slide', $slider);
+            var $prevBtn = $('.prev-slide', $slider);
             var timer = null;
             var current = 0;
 
@@ -54,12 +56,31 @@
                 activateSlide(current);
             };
 
+            var resetTimer = function(){
+                timer = setInterval(nextSlide, params.duration);
+            };
+
+
+            $nextBtn.click(function(e){
+                e.preventDefault();
+                clearInterval(timer);
+                nextSlide();
+                resetTimer();
+            });
+
+            $prevBtn.click(function(e){
+                e.preventDefault();
+                clearInterval(timer);
+                prevSlide();
+                resetTimer();
+            });
+
             $slider.css('height', params.height);
 
             // Activate first slide
             activateSlide(current);
 
-            timer = setInterval(nextSlide, params.duration);
+            resetTimer();
 
         });
 
