@@ -1,0 +1,21 @@
+{
+  "name": "websitti-slideshow",
+  "authors": [
+    "David Moothen <dmoothen@websitti.fr>"
+  ],
+  "description": "jQuery plugin for simple sliders",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}
