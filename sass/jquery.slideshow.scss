@@ -37,6 +37,32 @@
         right: 10px;
     }
 
+    .selectors {
+        position: absolute;
+        bottom: 10px;
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        width: 100%;
+        text-align: center;
+        z-index: 2;
+        li {
+            display: inline;
+            a {
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                border: 2px solid gray;
+                @include border-radius(50%);
+                background-color : white;
+                @include transition(0.5s);
+                &.active {
+                    background-color: black;
+                }
+            }
+        }
+    }
+
     .slideshow-container {
 
         margin: 0px;

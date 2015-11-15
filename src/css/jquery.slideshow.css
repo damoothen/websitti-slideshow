@@ -46,6 +46,40 @@
   right: 10px;
 }
 /* line 40, ../../sass/jquery.slideshow.scss */
+.slideshow .selectors {
+  position: absolute;
+  bottom: 10px;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+/* line 49, ../../sass/jquery.slideshow.scss */
+.slideshow .selectors li {
+  display: inline;
+}
+/* line 51, ../../sass/jquery.slideshow.scss */
+.slideshow .selectors li a {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 2px solid gray;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: white;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+/* line 59, ../../sass/jquery.slideshow.scss */
+.slideshow .selectors li a.active {
+  background-color: black;
+}
+/* line 66, ../../sass/jquery.slideshow.scss */
 .slideshow .slideshow-container {
   margin: 0px;
   padding: 0px;
@@ -54,7 +88,7 @@
   height: inherit;
   position: relative;
 }
-/* line 49, ../../sass/jquery.slideshow.scss */
+/* line 75, ../../sass/jquery.slideshow.scss */
 .slideshow .slideshow-container .item {
   position: absolute;
   top: 0px;
@@ -68,23 +102,23 @@
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-/* line 59, ../../sass/jquery.slideshow.scss */
+/* line 85, ../../sass/jquery.slideshow.scss */
 .slideshow .slideshow-container .item:nth-child(1) {
   background-color: #cf0730;
 }
-/* line 62, ../../sass/jquery.slideshow.scss */
+/* line 88, ../../sass/jquery.slideshow.scss */
 .slideshow .slideshow-container .item:nth-child(2) {
   background-color: green;
 }
-/* line 65, ../../sass/jquery.slideshow.scss */
+/* line 91, ../../sass/jquery.slideshow.scss */
 .slideshow .slideshow-container .item:nth-child(3) {
   background-color: blue;
 }
-/* line 68, ../../sass/jquery.slideshow.scss */
+/* line 94, ../../sass/jquery.slideshow.scss */
 .slideshow .slideshow-container .item:nth-child(4) {
   background-color: teal;
 }
-/* line 72, ../../sass/jquery.slideshow.scss */
+/* line 98, ../../sass/jquery.slideshow.scss */
 .slideshow .slideshow-container .item.active {
   opacity: 1;
   z-index: 1;

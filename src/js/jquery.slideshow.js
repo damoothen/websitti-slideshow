@@ -16,6 +16,7 @@
             var $items = $('.item', $slider);
             var $nextBtn = $('.next-slide', $slider);
             var $prevBtn = $('.prev-slide', $slider);
+            var $selectors = $('.selectors', $slider);
             var timer = null;
             var current = 0;
 
@@ -26,11 +27,13 @@
             */
             var activateSlide = function(i){
 
-                // Remove active class from all slides
+                // Remove active class from all slides and selectors
                 $items.removeClass(params.activeClass);
+                $('a', $selectors).removeClass('active');
 
                 // Set active class on slide i
-                $($items.get(i)).addClass('active');
+                $($items.get(i)).addClass(params.activeClass);
+                $($('a', $selectors).get(i)).addClass('active');
 
             };
 
@@ -72,6 +75,18 @@
                 e.preventDefault();
                 clearInterval(timer);
                 prevSlide();
+                resetTimer();
+            });
+
+            $('a', $selectors).click(function(e){
+                e.preventDefault();
+                clearInterval(timer);
+                var i = $('a', $selectors).index(this);
+                if (i === current) {
+                    return;
+                }
+                current = i;
+                activateSlide(i);
                 resetTimer();
             });
 
