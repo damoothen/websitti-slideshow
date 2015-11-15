@@ -20,28 +20,30 @@
   width: 100%;
   height: inherit;
   opacity: 0;
+  z-index: 0;
   -moz-transition: 0.5s;
   -o-transition: 0.5s;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-/* line 25, ../../sass/jquery.slideshow.scss */
+/* line 26, ../../sass/jquery.slideshow.scss */
 .slideshow .slideshow-container .item:nth-child(1) {
   background-color: red;
 }
-/* line 28, ../../sass/jquery.slideshow.scss */
+/* line 29, ../../sass/jquery.slideshow.scss */
 .slideshow .slideshow-container .item:nth-child(2) {
   background-color: green;
 }
-/* line 31, ../../sass/jquery.slideshow.scss */
+/* line 32, ../../sass/jquery.slideshow.scss */
 .slideshow .slideshow-container .item:nth-child(3) {
   background-color: blue;
 }
-/* line 34, ../../sass/jquery.slideshow.scss */
+/* line 35, ../../sass/jquery.slideshow.scss */
 .slideshow .slideshow-container .item:nth-child(4) {
   background-color: teal;
 }
-/* line 38, ../../sass/jquery.slideshow.scss */
+/* line 39, ../../sass/jquery.slideshow.scss */
 .slideshow .slideshow-container .item.active {
   opacity: 1;
+  z-index: 1;
 }
