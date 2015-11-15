@@ -3,6 +3,7 @@
     $.fn.slideshow = function(params){
 
         var defaults = {
+            height: 400,
             activeClass: 'active',
             duration: 7500
         };
@@ -52,6 +53,8 @@
                 }
                 activateSlide(current);
             };
+
+            $slider.css('height', params.height);
 
             // Activate first slide
             activateSlide(current);
